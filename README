@@ -1,0 +1,55 @@
+## Exécution du programme main.py
+
+Avant de lancer le programme, assurez-vous que Python est installé sur votre machine.
+Ensuite, installez les bibliothèques nécessaires, notamment matplotlib et networkx, en ouvrant un terminal et en exécutant :
+"pip install matplotlib"
+"pip install networkx"
+Une fois Python et les bibliothèques installés, lancez le programme avec la commande :
+"python main.py"
+Le programme va alors :
+-Charger le graphe depuis un fichier.
+-Demander à l utilisateur le sommet de départ et le sommet d arrivée.
+-Exécuter l algorithme étape par étape et afficher à chaque étape :
+    -Les distances mises à jour
+    -Les prédécesseurs
+    -Afficher le chemin le plus court final.
+-Ouvrir une fenêtre graphique affichant le graphe et le chemin optimal.
+
+## Technologies Utilisées
+
+Python 3
+NetworkX (pour la représentation du graphe)
+Matplotlib (pour la visualisation graphique)
+
+## Visualisation Minimaliste de l Algorithme de Dijkstra en console
+
+## Description
+
+Ce projet consiste en l implémentation de l algorithme de Dijkstra permettant de déterminer le plus court chemin dans un graphe pondéré à poids positifs.
+
+Notre programme propose :
+   -Une visualisation pas à pas en console
+   -Une visualisation graphique du graphe
+   -L affichage du chemin le plus court final
+Le graphe est chargé depuis un fichier texte et transformé en matrice d adjacence pour le traitement.
+
+## Objectifs du Projet
+
+-Comprendre le fonctionnement interne de l algorithme Dijkstra
+-Observer les mises à jour successives des distances
+-Suivre l évolution des prédécesseurs
+-Visualiser le chemin optimal entre deux sommets
+-Proposer une représentation graphique claire du résultat final
+
+## Visualisation du graphe (Amélioration)
+
+Nous avons ajouté une fonction de visualisation du graphe afin de mieux comprendre le déroulement de lalgorithme.  
+Cette amélioration permet de :
+   - Voir étape par étape les distances mises à jour  
+   - Observer les prédécesseurs  
+   - Visualiser le chemin optimal, qui est affiché en vert à la fin  
+
+## Pourquoi une visualisation graphique ?
+
+L algorithme manipule un graphe, et représenter les sommets et les arêtes de manière lisible dans la console n est pas possible, car la console ne permet pas de dessiner des graphes de manière claire et intuitive.  
+C est pour cette raison que nous avons amélioré le programme avec une visualisation graphique en fenêtre externe, permettant de voir clairement les sommets, les arêtes et le chemin optimal.
